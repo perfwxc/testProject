@@ -1,8 +1,8 @@
 #include <iostream>
 int main(char *a[])
 {
-	int a, b, c;
-	int d = 100, c = 1000;
+    int a, b, c;
+    int d = 100, c = 1000;
     max();
 }
 
@@ -19,7 +19,7 @@ int b(int a[], string b[])
     return 0;
 }
 
-unsigned int a = 5;//dads
+unsigned int a = 5; //dads
 string c, d, e;
 
 int caa(int a, int b)
@@ -34,6 +34,7 @@ int caa(int a)
 
 int c()
 {
+    caa(0);
     caa(1, 2);
     return 0;
 }
