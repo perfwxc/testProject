@@ -15,6 +15,6 @@ class M {
         if (sql==null && compare(EXECUTE_BATCH,name)) {
             sql = "batch";
         }
-        return sql1;
+        return sql;
     }
 }
