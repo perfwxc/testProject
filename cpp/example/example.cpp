@@ -35,6 +35,8 @@ int caa(int a)
 int c()
 {
     caa(0);
+    c();
+    caa();
     caa(1, 2);
     return 0;
 }
