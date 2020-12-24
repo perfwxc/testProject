@@ -29,11 +29,13 @@ int caa(int a, int b)
 
 int caa(int a)
 {
+    caa(8);
     return 0;
 }
 
-int c()
+int a()
 {
+    a();
     caa(0);
     c();
     caa();

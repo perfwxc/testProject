@@ -1,0 +1,29 @@
+# 1 "/Users/happy/Documents/Dataset/redis/src/sparkline.h"
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 366 "<built-in>" 3
+# 1 "<command line>" 1
+# 1 "<built-in>" 2
+# 1 "/Users/happy/Documents/Dataset/redis/src/sparkline.h" 2
+# 34 "/Users/happy/Documents/Dataset/redis/src/sparkline.h"
+struct sample {
+    double value;
+    char *label;
+};
+
+struct sequence {
+    int length;
+    int labels;
+    struct sample *samples;
+    double min, max;
+};
+
+
+
+
+
+struct sequence *createSparklineSequence(void);
+void sparklineSequenceAddSample(struct sequence *seq, double value, char *label);
+void freeSparklineSequence(struct sequence *seq);
+sds sparklineRenderRange(sds output, struct sequence *seq, int rows, int offset, int len, int flags);
+sds sparklineRender(sds output, struct sequence *seq, int columns, int rows, int flags);
