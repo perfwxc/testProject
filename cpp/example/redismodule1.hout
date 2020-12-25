@@ -1,6 +1,0 @@
-                int (*RedisModule_ZsetRangeNext ) (RedisModuleKey *key) ;
-               static int (*RedisModule_ZsetRangePrev)(RedisModuleKey *key) ;
-                int (*RedisModule_ZsetRangeEndReached)(RedisModuleKey *key) ;
-                int (*RedisModule_HashSet)(RedisModuleKey *key, int flags, ...) ;
-                int (*RedisModule_HashGet)(RedisModuleKey *key, int flags, ...) ;
-                int a();
